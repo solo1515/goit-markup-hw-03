@@ -306,6 +306,9 @@ h2{
     padding-top: 96px;
     padding-bottom: 120px;
 }
+.name{
+    margin-bottom: 8px;
+}
 .team-cards{
     display: flex;
         flex-wrap: wrap;
