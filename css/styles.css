@@ -3,6 +3,11 @@
     --desc-color: #434455;
     --main-color:#ffffff;
     --team-color:#f4f4fd;
+    --primary-brand :#4D5AE5;
+    --pressed-state:#404BBF;
+    --success:#31D0AA;
+    --subtle-text:#8E8F99;
+    --accent:#E7E9FC;
 
 /* ***змінні other*** */
     --indent: 24px;
@@ -38,7 +43,7 @@ button{
 }
 /* logo */
 .logo-name span {
-    color: #4D5AE5;
+    color:var(--primary-brand);
 }
 
 .logo-name {
@@ -50,8 +55,6 @@ button{
     letter-spacing: 0.03em;
     color: var(--brand-color);
     margin-right: 76px;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 .down{
     color:var(--main-color);
@@ -92,11 +95,12 @@ padding-right: 15px;
     line-height :1.5;
     letter-spacing: 0.02em;
     color: var(--brand-color);
-        padding-top: 24px;
-            padding-bottom: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: block;
 }
 .top-menu:hover {
-    color: #434455;
+    color:var(--desc-color);
 
 }
 .mail {
@@ -114,15 +118,15 @@ padding-right: 15px;
 
 }
 .mail:hover {
-    color: #4D5AE5;
+    color:var(--primary-brand);
    
 } 
 .phone:hover {
-    color: #4D5AE5;
+    color:var(--primary-brand);
 
 }
 .top-menu:focus {
-    color:#434455;
+    color:var(--desc-color);
 
 }
 .contact{
@@ -130,7 +134,7 @@ padding-right: 15px;
     padding-bottom: 24px;
 }
 .contact:focus {
-    color: #4D5AE5;
+    color: var(--primary-brand);
 }
 .footer-desc{
     font-weight: 400;
@@ -158,13 +162,13 @@ padding-right: 15px;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.04em;
-    background: #4D5AE5;
+    background: var(--primary-brand);
     color: #ffffff;
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15)
 }
 .button-order:hover {
-    background: #404BBF;
+    background: var(--pressed-state);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
 }
@@ -187,13 +191,13 @@ font-style: normal;
 font-weight: 500;
 font-size: 16px;
 line-height: 24px;
-background: #F4F4FD;
+background: var(--team-color); 
 border: 1px solid #E7E9FC;
 border-radius: 4px;
-color: #4D5AE5;
+color: var(--primary-brand);
 }
 .buttons-decor:hover{
-    background: #404BBF;
+    background: var(--pressed-state);
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 border-radius: 4px;
 border: 1px solid #404BBF;
@@ -300,6 +304,10 @@ h2{
 .title-description{
     padding-top: 32px;
     padding-bottom: 32px;
+}
+.card-description{
+     padding-top: 32px;
+    padding-bottom: 32px;
     padding-left: 16px;
 }
 .main{
@@ -323,7 +331,7 @@ h2{
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--brand-color);
     margin-bottom: 8px;
 }
 .description-team {
